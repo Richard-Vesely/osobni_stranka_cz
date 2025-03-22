@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Veselý</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <main class="main-container">
+        <!-- Name at the top -->
+        <div class="name-container">
+            <h1 class="name">Richard<br>Veselý</h1>
+        </div>
+
+        <!-- Main content - centered -->
+        <div class="content-container">
+            <div class="profile-container">
+                <p class="profile-tagline">
+                    <span class="highlight">Podnikám</span>, protože chci,<br>
+                    aby více mladých lidí žilo s<br>
+                    <span class="highlight">nadšením a sebevědomím</span>.
+                </p>
+                
+                <div class="profile-image">
+                    <img src="images/profile_photo.png" alt="Richard Veselý" />
+                </div>
+
+                <div class="profile-description">
+                    <p class="profile-text-emphasis">Tvořím projekty, které dětem a mladým lidem pomáhají být<br>nadšenější, sebevědomější a vědomě si tvořit život.</p>
+                    
+                    <div class="dropdown">
+                        <button class="dropdown-btn-subtle">Co přesně to znamená? <i data-lucide="chevron-down" class="toggle-icon"></i></button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-section">
+                                <h3>Nadšení:</h3>
+                                <p>Aby děti a mladí lidé vstávali ráno s chutí do života, bavilo je, co dělají, a s radostí objevovali svět kolem sebe.</p>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>Sebevědomí:</h3>
+                                <p>Aby věřili ve své schopnosti, nebáli se výzev a neomezovali sami sebe pocitem, že něco nezvládnou.</p>
+                            </div>
+                            <div class="dropdown-section">
+                                <h3>Vědomá tvorba života:</h3>
+                                <p>Aby místo otázky "Jak s tím, co umím, přežiju?" přemýšleli "Co opravdu chci dělat a jak toho dosáhnu?"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Gallery -->
+            <div class="portfolio-container">
+                <h2 class="portfolio-title">Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="images/project1.svg" alt="Project 1" />
+                            <div class="overlay"></div>
+                            <div class="project-title">
+                                <h3>Project 1</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="images/project2.svg" alt="Project 2" />
+                            <div class="overlay"></div>
+                            <div class="project-title">
+                                <h3>Project 2</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="images/project3.svg" alt="Project 3" />
+                            <div class="overlay"></div>
+                            <div class="project-title">
+                                <h3>Project 3</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="images/project4.svg" alt="Project 4" />
+                            <div class="overlay"></div>
+                            <div class="project-title">
+                                <h3>Project 4</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="images/project5.svg" alt="Project 5" />
+                            <div class="overlay"></div>
+                            <div class="project-title">
+                                <h3>Project 5</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="images/project6.svg" alt="Project 6" />
+                            <div class="overlay"></div>
+                            <div class="project-title">
+                                <h3>Project 6</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <footer class="footer">
+                <a href="mailto:ja@richardvesely.cz" class="footer-email">ja@richardvesely.cz</a>
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i data-lucide="youtube"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <i data-lucide="video"></i>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Add dropdown functionality
+        document.querySelector('.dropdown-btn-subtle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            const toggleIcon = this.querySelector('.toggle-icon');
+            toggleIcon.setAttribute('data-lucide', 
+                toggleIcon.getAttribute('data-lucide') === 'chevron-down' ? 'chevron-up' : 'chevron-down'
+            );
+            lucide.createIcons();
+            
+            const dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.maxHeight) {
+                dropdownContent.style.maxHeight = null;
+            } else {
+                dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px";
+            }
+        });
+    </script>
+</body>
+</html> 
