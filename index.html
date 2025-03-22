@@ -32,8 +32,8 @@
                     <p class="profile-text-emphasis">Tvořím projekty, které dětem a mladým lidem pomáhají být<br>nadšenější, sebevědomější a vědomě si tvořit život.</p>
                     
                     <div class="dropdown">
-                        <button class="dropdown-btn-subtle">Co přesně to znamená? <i data-lucide="chevron-down" class="toggle-icon"></i></button>
-                        <div class="dropdown-content">
+                        <button id="dropdown-toggle" class="dropdown-btn-subtle">Co přesně to znamená? <i data-lucide="chevron-down" class="toggle-icon"></i></button>
+                        <div id="dropdown-content" class="dropdown-content">
                             <div class="dropdown-section">
                                 <h3>Nadšení:</h3>
                                 <p>Aby děti a mladí lidé vstávali ráno s chutí do života, bavilo je, co dělají, a s radostí objevovali svět kolem sebe.</p>
@@ -44,7 +44,7 @@
                             </div>
                             <div class="dropdown-section">
                                 <h3>Vědomá tvorba života:</h3>
-                                <p>Aby místo otázky "Jak s tím, co umím, přežiju?" přemýšleli "Co opravdu chci dělat a jak toho dosáhnu?"</p>
+                                <p>Aby místo otázky "Jak s tím, co umím, přežiju?" přemýšleli "Co opravdo chci dělat a jak toho dosáhnu?"</p>
                             </div>
                         </div>
                     </div>
@@ -134,21 +134,32 @@
         // Initialize Lucide icons
         lucide.createIcons();
         
-        // Add dropdown functionality
-        document.querySelector('.dropdown-btn-subtle').addEventListener('click', function() {
-            this.classList.toggle('active');
-            const toggleIcon = this.querySelector('.toggle-icon');
-            toggleIcon.setAttribute('data-lucide', 
-                toggleIcon.getAttribute('data-lucide') === 'chevron-down' ? 'chevron-up' : 'chevron-down'
-            );
-            lucide.createIcons();
+        // Simple dropdown functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownToggle = document.getElementById('dropdown-toggle');
+            const dropdownContent = document.getElementById('dropdown-content');
+            const toggleIcon = dropdownToggle.querySelector('.toggle-icon');
             
-            const dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.maxHeight) {
-                dropdownContent.style.maxHeight = null;
-            } else {
-                dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px";
-            }
+            dropdownToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.classList.toggle('active');
+                dropdownContent.classList.toggle('active');
+                
+                // Toggle icon
+                if (toggleIcon.getAttribute('data-lucide') === 'chevron-down') {
+                    toggleIcon.setAttribute('data-lucide', 'chevron-up');
+                } else {
+                    toggleIcon.setAttribute('data-lucide', 'chevron-down');
+                }
+                
+                // Refresh icon
+                lucide.createIcons({
+                    icons: {
+                        'chevron-down': toggleIcon.getAttribute('data-lucide') === 'chevron-down',
+                        'chevron-up': toggleIcon.getAttribute('data-lucide') === 'chevron-up'
+                    }
+                });
+            });
         });
     </script>
 </body>
