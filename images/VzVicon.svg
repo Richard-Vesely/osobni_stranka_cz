@@ -1,0 +1,16 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="60" height="60" rx="30" fill="none"/>
+  
+  <!-- First V -->
+  <path d="M15 16L22 40" stroke="#FFCC00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M29 16L22 40" stroke="#FFCC00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- z in VzV -->
+  <path d="M32 26H42" stroke="#FFCC00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 36H42" stroke="#FFCC00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 26L32 36" stroke="#FFCC00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Last V -->
+  <path d="M44 16L51 40" stroke="#FFCC00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M58 16L51 40" stroke="#FFCC00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> 
