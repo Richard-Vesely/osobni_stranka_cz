@@ -1,24 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard Veselý</title>
+    <title>Richard Veselý | Vzdělávání a rozvoj mladých lidí | Ardoremy</title>
+    <meta name="description" content="Richard Veselý se věnuje vzdělávání a rozvoji mladých lidí. Zakladatel Ardoremy a dalších vzdělávacích projektů, které probouzí nadšení a sebevědomí.">
+    <meta name="keywords" content="Richard Veselý, Ardoremy, vzdělávání, rozvoj mladých lidí, Výlety za Vědou, sebevědomí mladých, vzdělávací projekty">
+    <link rel="canonical" href="https://richardvesely.cz">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://richardvesely.cz">
+    <meta property="og:title" content="Richard Veselý | Vzdělávání a rozvoj mladých lidí">
+    <meta property="og:description" content="Richard Veselý se věnuje vzdělávání a rozvoji mladých lidí. Zakladatel Ardoremy a dalších vzdělávacích projektů, které probouzí nadšení a sebevědomí.">
+    <meta property="og:image" content="https://richardvesely.cz/images/profile_photo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://richardvesely.cz">
+    <meta property="twitter:title" content="Richard Veselý | Vzdělávání a rozvoj mladých lidí">
+    <meta property="twitter:description" content="Richard Veselý se věnuje vzdělávání a rozvoji mladých lidí. Zakladatel Ardoremy a dalších vzdělávacích projektů, které probouzí nadšení a sebevědomí.">
+    <meta property="twitter:image" content="https://richardvesely.cz/images/profile_photo.png">
+    
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap">
     <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Richard Veselý",
+      "url": "https://richardvesely.cz",
+      "image": "https://richardvesely.cz/images/profile_photo.png",
+      "jobTitle": "Podnikatel a zakladatel vzdělávacích projektů",
+      "description": "Tvořím projekty, které dětem a mladým lidem pomáhají žít s nadšením, sebevědomím a vědomě si tvořit život.",
+      "sameAs": [
+        "https://www.facebook.com/VeselyRichard/",
+        "https://www.youtube.com/@RichardVesel%C3%BDCZ",
+        "https://www.instagram.com/rihard_vesely_cz/"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ardoremy",
+        "url": "https://www.ardoremy.cz/"
+      }
+    }
+    </script>
 </head>
 <body>
     <main class="main-container">
         <!-- Name at the top -->
-        <div class="name-container">
+        <header class="name-container">
             <h1 class="name">Richard<br>Veselý</h1>
-        </div>
+        </header>
 
         <!-- Main content - centered -->
         <div class="content-container">
-            <div class="profile-container">
+            <section class="profile-container">
                 <p class="profile-tagline">
                     <span class="highlight">Podnikám</span>, protože chci,<br>
                     aby více mladých lidí žilo s<br>
@@ -26,11 +67,11 @@
                 </p>
                 
                 <div class="profile-image">
-                    <img src="images/profile_photo.png" alt="Richard Veselý" />
+                    <img src="images/profile_photo.png" alt="Richard Veselý - podnikatel věnující se vzdělávání mladých lidí" loading="eager" />
                 </div>
 
-                <div class="profile-description">
-                    <p class="profile-text-emphasis">Tvořím projekty, které dětem a mladým lidem pomáhají žít s nadšením, sebevědomím a vědomě si tvořit život.</p>
+                <article class="profile-description">
+                    <p class="profile-text-emphasis">Tvořím projekty, které dětem a mladým lidem pomáhají žít s nadšením, sebevědomím a vědomě si tvořit život.</p>
                     
                     <div class="dropdown">
                         <button id="dropdown-toggle" class="dropdown-btn-subtle">Co přesně tím myslím? <i data-lucide="chevron-down" class="toggle-icon"></i></button>
@@ -45,63 +86,71 @@
                                     věřilo, že když něco chtějí uskutečnit, opravdu to dokážou                                </li>
                                 <li>
                                     <span class="bullet-point"></span>
-                                    si místo otázky „Jak s tím, co umím, přežiju?“ pokládalo otázku: „Jaký život chci mít a jak si ho můžu vytvořit?“                                </li>
+                                    si místo otázky "Jak s tím, co umím, přežiju?" pokládalo otázku: "Jaký život chci mít a jak si ho můžu vytvořit?"                                </li>
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
 
             <!-- Portfolio Gallery -->
-            <div class="portfolio-container">
+            <section class="portfolio-container">
                 <h2 class="portfolio-title">Projekty, na kterých se podílím</h2>
                 <div class="portfolio-grid">
-                    <a href="https://www.ardoremy.cz/" class="portfolio-link" target="_blank">
-                        <div class="portfolio-item">
-                            <div class="portfolio-icon">
-                                <img src="images/ArdoremyIcon.png" alt="Ardoremy Icon" />
+                    <article>
+                        <a href="https://www.ardoremy.cz/" class="portfolio-link" target="_blank">
+                            <div class="portfolio-item">
+                                <div class="portfolio-icon">
+                                    <img src="images/ArdoremyIcon.png" alt="Ardoremy - vzdělávací startup založený Richardem Veselým" loading="lazy" />
+                                </div>
+                                <h3 class="portfolio-name">Ardoremy</h3>
+                                <div class="portfolio-description">
+                                    Vzdělávací start-up, který místo "učení" probouzí nadšení, zvídavost a odvahu jít vlastní cestou. Do roku 2030 vyroste v síť základních až vysokých (ne)škol, které nabídnou plnohodnotnou alternativu těm, kdo chtějí od vzdělání víc než jen papír – těm, kdo chtějí žít život, který milují, a naplno využívat příležitostí, které přináší 21. století.
+                                </div>
                             </div>
-                            <div class="portfolio-name">Ardoremy</div>
-                            <div class="portfolio-description">
-                                Vzdělávací start-up, který místo "učení" probouzí nadšení, zvídavost a odvahu jít vlastní cestou. Do roku 2030 vyroste v síť základních až vysokých (ne)škol, které nabídnou plnohodnotnou alternativu těm, kdo chtějí od vzdělání víc než jen papír – těm, kdo chtějí žít život, který milují, a naplno využívat příležitostí, které přináší 21. století.
+                        </a>
+                    </article>
+                    <article>
+                        <a href="https://vyletyzavedou.cz/" class="portfolio-link" target="_blank">
+                            <div class="portfolio-item">
+                                <div class="portfolio-icon">
+                                    <img src="images/VzVicon.svg" alt="Výlety za Vědou - vzdělávací projekt Richarda Veselého" loading="lazy" />
+                                </div>
+                                <h3 class="portfolio-name">Výlety za Vědou</h3>
+                                <div class="portfolio-description">
+                                    Víkendové akce pro středoškoláky se zájmem o přírodní vědy.                            </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="https://vyletyzavedou.cz/" class="portfolio-link" target="_blank">
-                        <div class="portfolio-item">
-                            <div class="portfolio-icon">
-                                <img src="images/VzVicon.svg" alt="VzV Icon" />
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#" class="portfolio-link" target="_blank">
+                            <div class="portfolio-item">
+                                <div class="portfolio-icon">
+                                    <img src="images/icon3.svg" alt="Čemu věříme - projekt o limitujících přesvědčeních od Richarda Veselého" loading="lazy" />
+                                </div>
+                                <h3 class="portfolio-name">Čemu věříme?</h3>
+                                <div class="portfolio-description">
+                                    Stránka, která pomáhá lidem objevovat a nabourávat své limitující přesvědčení.
+                                    <br><i>Placeholder - ještě to není online.</i>
+                                </div>
                             </div>
-                            <div class="portfolio-name">Výlety za Vědou</div>
-                            <div class="portfolio-description">
-                                Víkendové akce pro středoškoláky se zájmem o přírodní vědy.                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="portfolio-link" target="_blank">
-                        <div class="portfolio-item">
-                            <div class="portfolio-icon">
-                                <img src="images/icon3.svg" alt="Belief Icon" />
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#" class="portfolio-link" target="_blank">
+                            <div class="portfolio-item">
+                                <div class="portfolio-icon">
+                                    <img src="images/icon4.svg" alt="PraveZacinam.cz - motivační projekt Richarda Veselého" loading="lazy" />
+                                </div>
+                                <h3 class="portfolio-name">#PraveZacinam.cz</h3>
+                                <div class="portfolio-description">
+                                    Odkaz, který říká: "Začínám – i když nejsem připravený." Digitální svolení začít teď. <br><i>Placeholder - ještě to není online.</i>
+                                </div>
                             </div>
-                            <div class="portfolio-name">Čemu věříme?</div>
-                            <div class="portfolio-description">
-                                Stránka, která pomáhá lidem objevovat a nabourávat své limitující přesvědčení.
-                                <br><i>Placeholder - ještě to není online.</i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="portfolio-link" target="_blank">
-                        <div class="portfolio-item">
-                            <div class="portfolio-icon">
-                                <img src="images/icon4.svg" alt="Starting Icon" />
-                            </div>
-                            <div class="portfolio-name">#PraveZacinam.cz</div>
-                            <div class="portfolio-description">
-                                Odkaz, který říká: „Začínám – i když nejsem připravený.“ Digitální svolení začít teď. <br><i>Placeholder - ještě to není online.</i>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    </article>
                 </div>
-            </div>
+            </section>
             
             <!-- Footer -->
             <footer class="footer">
