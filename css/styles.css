@@ -397,4 +397,30 @@ body {
     .footer {
         padding: 2rem;
     }
+}
+
+/* Bullet list styles */
+.bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.bullet-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.bullet-point {
+    position: absolute;
+    left: 0;
+    top: 0.45rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    display: inline-block;
 } 
