@@ -331,6 +331,7 @@ body {
     font-weight: 500;
     margin-bottom: 0.75rem;
     color: #ffcc00;
+    text-decoration: underline;
 }
 
 .portfolio-description {
