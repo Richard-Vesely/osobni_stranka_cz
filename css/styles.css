@@ -89,8 +89,8 @@ body {
 
 .profile-image {
     position: relative;
-    height: 10rem;
-    width: 10rem;
+    height: 12rem;
+    width: 12rem;
     overflow: hidden;
     border-radius: 50%;
     border: 2px solid #ffcc00;
@@ -99,8 +99,8 @@ body {
 
 @media (min-width: 640px) {
     .profile-image {
-        height: 12rem;
-        width: 12rem;
+        height: 14rem;
+        width: 14rem;
         margin: 2rem 0;
     }
 }
