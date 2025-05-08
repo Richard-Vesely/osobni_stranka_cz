@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardoremy Newsletter | Richard Veselý</title>
+    <meta name="description" content="Přihlaste se k odběru Ardoremy newsletteru a získejte nejnovější informace o vzdělávacích projektech a příležitostech.">
+    <link rel="canonical" href="https://richardvesely.cz/ardoremy_newsletter">
+    
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '1429032');
+    </script>
+    <!-- End MailerLite Universal -->
+    
+    <style>
+        /* Specific styles for newsletter page */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .content-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .slideshow-container {
+            width: 100%;
+            max-width: 1200px;
+            height: 45vh;
+            min-height: 300px;
+            position: relative;
+            margin: 0 auto 3rem;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .slideshow-slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1.2s ease-in-out;
+            object-fit: cover;
+        }
+        
+        .slideshow-slide.active {
+            opacity: 1;
+        }
+        
+        .newsletter-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .newsletter-title {
+            color: #ffcc00;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .newsletter-description {
+            text-align: center;
+            margin-bottom: 3rem;
+            line-height: 1.8;
+            font-size: 1.25rem;
+            max-width: 600px;
+        }
+        
+        .newsletter-list {
+            text-align: left;
+            margin: 0.1rem auto;
+            margin-top: -2.25rem;
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .newsletter-list li {
+            position: relative;
+            padding-left: 1.5em;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .newsletter-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        
+        #mailer-lite-form {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: rgba(255, 204, 0, 0.03);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 204, 0, 0.1);
+        }
+        
+        /* Yellow highlight for keywords */
+        .highlight {
+            color: #ffcc00;
+            font-weight: 500;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .slideshow-container {
+                height: 35vh;
+                min-height: 250px;
+                margin-bottom: 2rem;
+            }
+            
+            .newsletter-title {
+                font-size: 2rem;
+            }
+            
+            .newsletter-description {
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .slideshow-container {
+                height: 30vh;
+                min-height: 200px;
+            }
+            
+            #mailer-lite-form {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="main-container">
+        <!-- Name at the top -->
+        <header class="name-container">
+            <h1 class="name">Richard<br>Veselý</h1>
+        </header>
+
+        <!-- Main content - newsletter signup -->
+        <div class="content-container">
+            <!-- Slideshow header -->
+            <div class="slideshow-container">
+                <img src="images/Ardoremy ve fotkách/sensitive_53.jpg" alt="Ardoremy - zábavné aktivity pro děti" class="slideshow-slide active">
+                <img src="images/Ardoremy ve fotkách/IMG_20230719_111038.jpg" alt="Ardoremy - tvořivé dílny" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/7.jpg" alt="Ardoremy - dětské projekty" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/IMG_20230710_153110.jpg" alt="Ardoremy - společné aktivity" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/IMG_20250215_104353.jpg" alt="Ardoremy - tvůrčí prostředí" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/IMG_20230719_161939.jpg" alt="Ardoremy - venkovní aktivity" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/105.JPG" alt="Ardoremy - učení zábavnou formou" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/IMG_20230712_084723.jpg" alt="Ardoremy - kreativní dílny" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-07-56.jpg" alt="Ardoremy - objevování" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-09-23.jpg" alt="Ardoremy - spolupráce dětí" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/IMG_20250215_113451.jpg" alt="Ardoremy - kreativní myšlení" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/IMG_20250215_154544.jpg" alt="Ardoremy - týmová práce" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-08-15.jpg" alt="Ardoremy - badatelské aktivity" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/IMG_20250215_155304.jpg" alt="Ardoremy - inspirativní prostředí" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/IMG_20250215_154158.jpg" alt="Ardoremy - volnočasové aktivity" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-08-48.jpg" alt="Ardoremy - vzdělávací workshopy" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-09-20.jpg" alt="Ardoremy - společné učení" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/Copy of 552.JPG" alt="Ardoremy - dětská radost" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-08-40.jpg" alt="Ardoremy - skupinové aktivity" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/IMG_20250216_170713.jpg" alt="Ardoremy - učení hrou" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/IMG_20250216_094623.jpg" alt="Ardoremy - radost z objevování" class="slideshow-slide">
+                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-09-33.jpg" alt="Ardoremy - svobodné učení" class="slideshow-slide">
+            </div>
+            
+            <div class="newsletter-container">
+                <h2 class="newsletter-title">Ardoremy Newsletter</h2>
+                
+                <p class="newsletter-description">
+                    <span class="highlight">Zaujalo vás to, co děláme?</span><br>
+                    Nechte nám e-mail. Pošleme vám:
+                </p>
+                
+                <ul class="newsletter-list">
+                    <li>info o příštích akcích pro děti</li>
+                    <li>inspiraci na tvoření a bádání</li>
+                    <li>novinky o tom, co chystáme dál</li>
+                </ul>
+                
+                <!-- Mailer Lite form -->
+                <div id="mailer-lite-form">
+                    <div class="ml-embedded" data-form="lE6Kwq"></div>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <footer class="footer">
+                <a href="mailto:richard.vesely@ardoremy.cz" class="footer-email">richard.vesely@ardoremy.cz</a>
+                
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/VeselyRichard/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i data-lucide="facebook" class="social-icon"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@RichardVesel%C3%BDCZ" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i data-lucide="youtube" class="social-icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rihard_vesely_cz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i data-lucide="instagram" class="social-icon"></i>
+                    </a>
+                </div>
+                
+                <div class="copyright">
+                    Richard Veselý, IČO 14101751, copyright © Richard Veselý, 2025
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Slideshow functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slideshow-slide');
+            let currentSlide = 0;
+            
+            function nextSlide() {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+            
+            // Change slide every 5 seconds
+            setInterval(nextSlide, 5000);
+        });
+    </script>
+</body>
+</html> 
