@@ -37,35 +37,10 @@
             justify-content: space-between;
         }
         
-        .slideshow-container {
-            width: 100%;
-            max-width: 1200px;
-            height: 45vh;
-            min-height: 300px;
-            position: relative;
-            margin: 0 auto 3rem;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-        }
-        
-        .slideshow-slide {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            opacity: 0;
-            transition: opacity 1.2s ease-in-out;
-            object-fit: cover;
-        }
-        
-        .slideshow-slide.active {
-            opacity: 1;
-        }
-        
         .newsletter-container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 0 1.5rem 4rem;
+            padding: 2rem 1.5rem 4rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -128,12 +103,6 @@
         
         /* Responsive adjustments */
         @media (max-width: 768px) {
-            .slideshow-container {
-                height: 35vh;
-                min-height: 250px;
-                margin-bottom: 2rem;
-            }
-            
             .newsletter-title {
                 font-size: 2rem;
             }
@@ -145,11 +114,6 @@
         }
         
         @media (max-width: 480px) {
-            .slideshow-container {
-                height: 30vh;
-                min-height: 200px;
-            }
-            
             #mailer-lite-form {
                 padding: 1.5rem;
             }
@@ -165,33 +129,6 @@
 
         <!-- Main content - newsletter signup -->
         <div class="content-container">
-            <!-- Slideshow header -->
-            <div class="slideshow-container">
-                <img src="images/Ardoremy ve fotkách/sensitive_53.jpg" alt="Ardoremy - zábavné aktivity pro děti" class="slideshow-slide active">
-                <img src="images/Ardoremy ve fotkách/IMG_20230719_111038.jpg" alt="Ardoremy - tvořivé dílny" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/7.jpg" alt="Ardoremy - dětské projekty" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/IMG_20230710_153110.jpg" alt="Ardoremy - společné aktivity" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/IMG_20250215_104353.jpg" alt="Ardoremy - tvůrčí prostředí" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/IMG_20230719_161939.jpg" alt="Ardoremy - venkovní aktivity" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/105.JPG" alt="Ardoremy - učení zábavnou formou" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/IMG_20230712_084723.jpg" alt="Ardoremy - kreativní dílny" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-07-56.jpg" alt="Ardoremy - objevování" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-09-23.jpg" alt="Ardoremy - spolupráce dětí" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/IMG_20250215_113451.jpg" alt="Ardoremy - kreativní myšlení" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/IMG_20250215_154544.jpg" alt="Ardoremy - týmová práce" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-08-15.jpg" alt="Ardoremy - badatelské aktivity" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/IMG_20250215_155304.jpg" alt="Ardoremy - inspirativní prostředí" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-08-48.jpg" alt="Ardoremy - vzdělávací workshopy" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-09-20.jpg" alt="Ardoremy - společné učení" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/Copy of 552.JPG" alt="Ardoremy - dětská radost" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-08-40.jpg" alt="Ardoremy - skupinové aktivity" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/IMG_20250216_170713.jpg" alt="Ardoremy - učení hrou" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/IMG_20250216_094623.jpg" alt="Ardoremy - radost z objevování" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/photo_2025-04-11_14-09-33.jpg" alt="Ardoremy - svobodné učení" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/IMG_20230710_154456.jpg" alt="Ardoremy - společné objevování" class="slideshow-slide">
-                <img src="images/Ardoremy ve fotkách/PXL_20250327_135219690.jpg" alt="Ardoremy - zážitkové učení" class="slideshow-slide">
-            </div>
-            
             <div class="newsletter-container">
                 <h2 class="newsletter-title">Ardoremy Newsletter</h2>
                 
@@ -238,21 +175,6 @@
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
-        
-        // Slideshow functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const slides = document.querySelectorAll('.slideshow-slide');
-            let currentSlide = 0;
-            
-            function nextSlide() {
-                slides[currentSlide].classList.remove('active');
-                currentSlide = (currentSlide + 1) % slides.length;
-                slides[currentSlide].classList.add('active');
-            }
-            
-            // Change slide every 5 seconds
-            setInterval(nextSlide, 5000);
-        });
     </script>
 </body>
 </html> 
